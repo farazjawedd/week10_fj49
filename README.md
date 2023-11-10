@@ -1,15 +1,22 @@
-## SQLite Lab
+[![CI](https://github.com/farazjawedd/week10_fj49/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/week10_fj49/actions/workflows/cicd.yml)
 
-### Lab:
 
-In this lab we extract the grocerydb database which is hosted on a github repository. We transform and load it into SQLite and then execute two sample queries: 
-* Sum of the count_product column.
-* Average of the count_product column.
+## Data Processing with Spark
 
-Artitechtural diagram showing how the project works:
+### Project Overview
 
-![etl](https://github.com/nogibjj/sqlite-lab-fj49/assets/101464414/2809102f-e363-4d23-8311-b7ec04f43804)
+#### Data
+This project performs data processing on a large CSV dataset using PySpark and Spark SQL. I am using a `spotify.csv` dataset which is in the default directory of the folder.
 
-I took help from Claude.AI from the company Anthropic (Open AI's competitor)
+#### Loading & Exploring the dataset
 
+I loaded the dataset into a pyspark dataframe, here is how the dataset looks:
+
+<img width="1428" alt="Screenshot 2023-11-10 at 5 12 37 AM" src="https://github.com/farazjawedd/week10_fj49/assets/101464414/4d56e4e2-986f-4715-9a13-c95c4d5fe98c">
+
+#### Transforming the year from string to datetime format
+
+Check the change in the year variable (2nd row in both before and after)
+
+<img width="461" alt="Screenshot 2023-11-10 at 5 14 09 AM" src="https://github.com/farazjawedd/week10_fj49/assets/101464414/8d0c0c4b-07c8-4f55-9e98-2326d2d379fb">
 
