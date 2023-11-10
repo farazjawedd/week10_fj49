@@ -18,6 +18,7 @@ df.printSchema()
 
 #top 10 songs with danceability
 df = df.filter(col('danceability') <= 1) #removing an erroneous value
-top10 = df.orderBy(col('danceability').desc()).select('track_name', 'artist_name', 'danceability').limit(10)
+top10 = df.orderBy(col('danceability').desc())\
+           .select('track_name', 'artist_name', 'danceability').limit(10)
 
-top10.write.csv('top10.csv')
+top10.write.mode('overwrite').csv('top10.csv')
